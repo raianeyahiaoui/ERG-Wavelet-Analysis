@@ -37,7 +37,7 @@ The script identifies the relevant signal columns and time-stamps from raw clini
 ### 2. Gaussian Denoising
 To ensure the high-frequency "ripples" (OPs) are not lost to noise, we apply a Gaussian filter. This preserves the underlying morphology much better than standard moving-average filters.
 
-![Denoising Comparison](erg-denoised-comparison.png)
+![Denoising Comparison](erg-denoising-comparison.png)
 *Figure 3: Side-by-side comparison of the original noisy signal vs. the denoised result.*
 
 ### 3. Wavelet Scalogram (Time-Frequency)
@@ -57,18 +57,19 @@ Traditional Fourier Transforms lose time-localization. By using **CWT**, we can 
    git clone https://github.com/raianeyahiaoui/ERG-Wavelet-Analysis.git
    cd ERG-Wavelet-Analysis
 
-   ## Execution
-   Run the main Proof-of-Concept (PoC) script
-   python erg_wavelet_poc_borisov.py
+## Execution
+   * Run the main Proof-of-Concept (PoC) script
+     python erg_wavelet_poc_borisov.py
 
-   ## 📁 Repository Structure
-   erg_wavelet_poc_borisov.py: Main analysis script containing the CWT logic and plotting functions.
-01 Appendix 1.xlsx: Sample ERG dataset used for the PoC.
-requirements.txt: List of necessary Python packages.
-erg-*.png: Visualizations of the analysis results
+## 📁 Repository Structure
+* erg_wavelet_poc_borisov.py: Main analysis script containing the CWT logic and plotting functions.
+* 01 Appendix 1.xlsx: Sample ERG dataset used for the PoC.
+* requirements.txt: List of necessary Python packages.
+* erg-*.png: Visualizations of the analysis results
 
 ## 👨‍🔬 About the Author
-Yahiaoui Raiane
-Telecommunication Systems Engineer | AI Researcher
-📧 Email: yahiaoui.raiane7@gmail.com
-This project is licensed under the MIT License – see the LICENSE file for details.
+* Yahiaoui Raiane
+* Telecommunication Systems Engineer | AI Researcher
+* 📧 Email: yahiaoui.raiane7@gmail.com
+  
+* This project is licensed under the MIT License – see the LICENSE file for details.
